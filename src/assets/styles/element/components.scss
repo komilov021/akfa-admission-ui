@@ -1,0 +1,173 @@
+@import "../colors.scss";
+
+.el-select__input--iOS {
+  display: none !important;
+}
+// Form
+.el-form {
+  .el-form-item {
+    &.is-required:not(.is-no-asterisk).asterisk-right
+      > .el-form-item__label::after {
+      margin-left: 2px;
+      color: #ff3b30;
+    }
+
+    &__label {
+      font-weight: 600;
+      font-size: 14px;
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 6px !important;
+
+      /* identical to box height */
+
+      color: #333333;
+    }
+    .el-select {
+      &.no-placeholder {
+        .el-input__wrapper {
+          .el-input__inner::placeholder {
+            display: none;
+            color: white !important;
+          }
+        }
+      }
+    }
+    .el-input {
+      &--large {
+        height: 43px !important;
+      }
+      &.ocean {
+        .el-input__wrapper {
+          &.is-focus {
+            box-shadow: 0 0 0 1px #367aff inset;
+          }
+        }
+      }
+      &__inner {
+        color: #111827 !important;
+        color: rgba(24, 40, 87, 0.3);
+        font-size: 14px;
+        font-weight: 550;
+      }
+    }
+  }
+}
+
+.el-sub-menu {
+  &__title {
+    &:hover {
+      background-color: #455378 !important;
+
+      .navigation {
+        color: #ffffff !important;
+      }
+    }
+  }
+}
+.el-upload-list__item-name {
+  background: #c9f3ff;
+  color: #2d477a !important;
+  svg{
+    color: #2d477a !important;
+  }
+}
+.el-upload-list__item .el-icon--close {
+  display: block !important;
+  color: #2d477a !important;
+}
+.el-upload-list__item {
+  background-color: #c9f3ff;
+  color: #2d477a !important;
+}
+// Button
+
+.el-button {
+  &--large {
+    font-family: Manrope;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 18px !important;
+  }
+}
+.el-drawer__body {
+  padding: 12px 0px !important;
+}
+.circle-progress {
+  width: 40px !important;
+  height: 40px !important;
+  position: relative;
+  text-align: center;
+  .el-progress-circle {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .el-progress__text {
+    font-size: 10px !important;
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: var(--Gray, #757586);
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .el-progress-circle__path {
+    stroke: var(--Orange, #f76c02) !important;
+  }
+}
+// collapse
+.collapse-details {
+  &__item__wrap {
+    border-bottom: 0 !important;
+  }
+  .el-collapse-item {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    .el-icon svg path {
+      fill: #757586;
+    }
+    &__header {
+      color: var(--Dark, #222529) !important;
+      font-family: Manrope;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 24px 20px 24px 24px;
+      border-bottom: 0 !important;
+    }
+
+    &__content {
+      padding: 0px 24px 24px;
+      cursor: default;
+    }
+
+    &__arrow {
+      rotate: 90deg;
+
+      &.is-active {
+        rotate: 180deg;
+      }
+    }
+  }
+}
+// dialog
+.details {
+  background: white !important;
+  border-radius: 8px !important;
+  .el-dialog__header {
+    padding: 30px 30px 22px !important;
+    margin-right: 0;
+  }
+  .el-dialog__body {
+    padding: 0 30px 30px !important;
+  }
+}
